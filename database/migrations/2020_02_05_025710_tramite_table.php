@@ -24,7 +24,9 @@ class TramiteTable extends Migration
             $table->string('departamento');
             $table->string('municipio');
             $table->string('email');
-            $table->string('imagen');
+            $table->string('dpi');
+            $table->string('status');
+            $table->integer('idUsuario');
             $table->timestamps();
         });
     }

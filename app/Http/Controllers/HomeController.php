@@ -27,7 +27,7 @@ class HomeController extends Controller
     {
 
         if (Auth::user()->idRol == 1){
-            return view('home');
+            return view('registro.index');
         }else {
             return view('home');
         }

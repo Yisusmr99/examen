@@ -14,10 +14,17 @@ class DatabaseSeeder extends Seeder
         //Run this comand   "php artisan db:seed" to fill the data
         //If you use migrate:fresh use the --seed after the comand to seed the table automaticaly 
         DB::table('users')->insert([
-            'name' => 'jmorales',
-            'email' => 'jmorales@gmail.com',
+            'name' => 'prosales',
+            'email' => 'prosales@gmail.com',
             'password' => bcrypt('password'),
             'idRol'    => '1',
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'tcurz',
+            'email' => 'tcurz@gmail.com',
+            'password' => bcrypt('password'),
+            'idRol'    => '0',
         ]);
     }
 }
