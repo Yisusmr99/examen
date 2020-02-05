@@ -25,7 +25,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return Auth::user();
-        // return view('home');
+
+        if (Auth::user()->idRol == 1){
+            return view('home');
+        }else {
+            return view('home');
+        }
     }
 }

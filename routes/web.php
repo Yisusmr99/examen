@@ -18,3 +18,11 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('registro',          'TramiteController@index');
+Route::any('registro/store',    'TramiteController@store')->name('registro.store');
+Route::any('registro/create',   'TramiteController@create')->name('registro.create');
+
+Route::get('test', function () {
+    return 'Hola';
+});
